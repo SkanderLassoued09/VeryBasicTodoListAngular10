@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div><h1>Todolist</h1></div>
+      <div>
+        <input type="text" placeholder="Enter the name" [(ngModel)]="name">
+        <input type="text" placeholder="Enter the age" [(ngModel)]="age">
+      </div>
+      <div>
+        <button class="btn btn-success" (click) = "submit()">Submit</button>
+      </div>
+      <div *ngIf="listofusers.length==0" class="alert alert-warning">There is no one here</div>
+
+      <table class="table">
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr *ngFor = "let user of listofusers">
+          <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+          <td>{{user.age}}</td>
+          <td>
+            <button  class="btn btn-warning" (click)="delete(user)">Delete</button>
+            <button class="btn btn-info" (click)= "edit(user)">Edit</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
