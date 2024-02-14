@@ -15,7 +15,5 @@ import { FormsModule } from '@angular/forms';
 export class AppModule {}
 
 /**
- * 1 st commit ggg
- * dkjfvpwdjkb
- * wdlùjfnvmjdf
+ * I'm nezih
  */
