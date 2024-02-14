@@ -6,19 +6,14 @@ import { AppComponent } from './app.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { FormsModule } from '@angular/forms';
 
-
 @NgModule({
-  declarations: [
-    AppComponent,
-    TodolistComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-
-  ],
+  declarations: [AppComponent, TodolistComponent],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
+
+/**
+ * 1 st commit ggg
+ */
